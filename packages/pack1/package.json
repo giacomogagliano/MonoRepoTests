@@ -1,0 +1,52 @@
+{
+  "name": "@zionstate/pack1",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/zionstate-pack1.cjs.js",
+  "module": "dist/zionstate-pack1.esm.js",
+  "types": "built/index.d.ts",
+  "exports": {
+    ".": {
+      "module": "./dist/zionstate-pack1.esm.js",
+      "default": "./dist/zionstate-pack1.cjs.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "keywords": [],
+  "author": "Gagliano Giacomo",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "run-p build:*",
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist",
+    "typecheck": "tsc --noEmit",
+    "test": "nodemon ./test/test.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "preconstruct": {
+    "exports": true,
+    "entrypoints": [
+      "index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@octokit/rest": "^19.0.4",
+    "dotenv": "^16.0.3",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "@babel/preset-typescript": "^7.18.6",
+    "@octokit/rest": "^19.0.4",
+    "@types/lodash": "^4.14.186",
+    "@types/node": "^18.8.1",
+    "dotenv": "^16.0.3",
+    "lodash": "^4.17.21",
+    "typescript": "^4.8.4"
+  }
+}

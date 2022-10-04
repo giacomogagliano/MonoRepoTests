@@ -1,0 +1,48 @@
+{
+  "name": "monorepo-test",
+  "version": "0.0.1",
+  "description": "Zion MonoRepo playground / battlefield",
+  "main": "built/index.js",
+  "keywords": [],
+  "author": "Gagliano Giacomo",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "postinstall": "manypkg check",
+    "clean": "bolt ws clean",
+    "build": "preconstruct build && bolt ws build",
+    "typecheck": "bolt ws typecheck"
+  },
+  "bin": {
+    "testTest": "./test.js"
+  },
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ],
+    "___experimentalFlags_WILL_CHANGE_IN_PATCH": {
+      "exports": true
+    }
+  },
+  "bolt": {
+    "workspaces": [
+      "apps/*",
+      "packages/*"
+    ]
+  },
+  "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "@babel/preset-typescript": "^7.18.6",
+    "@manypkg/cli": "^0.19.2",
+    "@octokit/rest": "^19.0.4",
+    "@preconstruct/cli": "^2.2.2",
+    "@types/lodash": "^4.14.186",
+    "@types/node": "^18.8.1",
+    "dotenv": "^16.0.3",
+    "lodash": "^4.17.21",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.8.4"
+  }
+}

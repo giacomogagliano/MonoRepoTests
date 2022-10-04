@@ -1,0 +1,3 @@
+let number;
+
+number = "a";
