@@ -1,0 +1,55 @@
+{
+  "name": "@zionstate/testpack",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Zion testpack",
+  "source": "src/index.ts",
+  "main": "dist/zionstate-testpack.cjs.js",
+  "module": "dist/zionstate-testpack.esm.js",
+  "exports": {
+    "./bea": {
+      "module": "./bea/dist/zionstate-testpack-bea.esm.js",
+      "default": "./bea/dist/zionstate-testpack-bea.cjs.js"
+    },
+    ".": {
+      "module": "./dist/zionstate-testpack.esm.js",
+      "default": "./dist/zionstate-testpack.cjs.js"
+    },
+    "./create": {
+      "module": "./create/dist/zionstate-testpack-create.esm.js",
+      "default": "./create/dist/zionstate-testpack-create.cjs.js"
+    },
+    "./awesomet": {
+      "module": "./awesomet/dist/zionstate-testpack-awesomet.esm.js",
+      "default": "./awesomet/dist/zionstate-testpack-awesomet.cjs.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "awesomet",
+    "create",
+    "bea"
+  ],
+  "preconstruct": {
+    "exports": true,
+    "entrypoints": [
+      "index.ts",
+      "awesomet.ts",
+      "create.ts",
+      "bea.ts"
+    ]
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "run-p build:*",
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "@preconstruct/cli": "^2.2.2"
+  }
+}

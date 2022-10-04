@@ -1,6 +1,7 @@
 {
   "name": "@zionstate/do",
   "version": "0.0.1",
+  "private": true,
   "description": "",
   "main": "dist/zionstate-do.cjs.js",
   "module": "dist/zionstate-do.esm.js",
@@ -11,10 +12,10 @@
     },
     "./package.json": "./package.json"
   },
+  "types": "dist/index.d.ts",
   "keywords": [],
   "author": "Gagliano Giacomo",
   "license": "ISC",
-  "type": "module",
   "scripts": {
     "clean": "rm -rf dist",
     "build": "run-p build:*",
@@ -39,6 +40,7 @@
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.3",
     "@babel/preset-typescript": "^7.18.6",
+    "@preconstruct/cli": "^2.2.2",
     "@zionstate/pack1": "*",
     "dotenv": "^16.0.3",
     "typescript": "^4.8.4"

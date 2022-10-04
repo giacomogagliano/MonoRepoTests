@@ -1,0 +1,4 @@
+{
+  "main": "dist/zionstate-testpack-create.cjs.js",
+  "module": "dist/zionstate-testpack-create.esm.js"
+}

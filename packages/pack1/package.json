@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/zionstate-pack1.cjs.js",
   "module": "dist/zionstate-pack1.esm.js",
-  "types": "built/index.d.ts",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "module": "./dist/zionstate-pack1.esm.js",

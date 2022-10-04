@@ -1,0 +1,14 @@
+{
+  "name": "@zionapp/amoduleapp",
+  "version": "0.0.1",
+  "description": "An application which uses ES modules syntax",
+  "main": "src/index.js",
+  "author": "Gagliano Giacom",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@zionstate/do": "0.0.1",
+    "@zionstate/pack1": "0.0.1",
+    "@zionstate/testpack": "^0.0.1"
+  }
+}
