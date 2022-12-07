@@ -1,0 +1,38 @@
+{
+  "name": "@zionstate/multientry",
+  "version": "0.0.1",
+  "description": "test for multientries packages",
+  "main": "dist/zionstate-multientry.cjs.js",
+  "module": "dist/zionstate-multientry.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "module": "./dist/zionstate-multientry.esm.js",
+      "default": "./dist/zionstate-multientry.cjs.js"
+    },
+    "./entry2": {
+      "module": "./entry2/dist/zionstate-multientry-entry2.esm.js",
+      "default": "./entry2/dist/zionstate-multientry-entry2.cjs.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "author": "Gagliano Giacomo",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "run-p build:*",
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "entry2"
+  ],
+  "preconstruct": {
+    "exports": true,
+    "entrypoints": [
+      "index.ts",
+      "entry2.ts"
+    ]
+  }
+}
