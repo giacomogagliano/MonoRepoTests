@@ -1,3 +1,5 @@
 import { awesomet } from "@zionstate/testpack";
 import { packDo } from "@zionstate/do";
-console.log(packDo);
+import { entryPoint1 } from "@zionstate/multientry";
+import { entry2 } from "@zionstate/multientry/entry2";
+console.log(entry2);

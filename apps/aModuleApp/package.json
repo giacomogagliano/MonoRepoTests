@@ -8,6 +8,7 @@
   "type": "module",
   "dependencies": {
     "@zionstate/do": "0.0.1",
+    "@zionstate/multientry": "0.0.1",
     "@zionstate/pack1": "0.0.1",
     "@zionstate/testpack": "^0.0.1"
   }
