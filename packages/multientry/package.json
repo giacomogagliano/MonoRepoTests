@@ -14,25 +14,37 @@
       "module": "./entry2/dist/zionstate-multientry-entry2.esm.js",
       "default": "./entry2/dist/zionstate-multientry-entry2.cjs.js"
     },
+    "./useFs": {
+      "module": "./useFs/dist/zionstate-multientry-useFs.esm.js",
+      "default": "./useFs/dist/zionstate-multientry-useFs.cjs.js"
+    },
+    "./Folder": {
+      "module": "./Folder/some/dist/zionstate-multientry-Folder-some.esm.js",
+      "default": "./Folder/some/dist/zionstate-multientry-Folder-some.cjs.js"
+    },
     "./package.json": "./package.json"
   },
   "author": "Gagliano Giacomo",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "run-p build:*",
+    "build": "yarn preconstruct build && run-p build:*",
     "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist",
     "typecheck": "tsc --noEmit"
   },
   "files": [
     "dist",
-    "entry2"
+    "entry2",
+    "useFs",
+    "Folder/some"
   ],
   "preconstruct": {
     "exports": true,
     "entrypoints": [
       "index.ts",
-      "entry2.ts"
+      "entry2.ts",
+      "useFs.ts",
+      "./Folder/some.ts"
     ]
   }
 }
