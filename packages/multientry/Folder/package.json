@@ -1,0 +1,5 @@
+{
+  "main": "dist/zionstate-multientry-Folder.cjs.js",
+  "module": "dist/zionstate-multientry-Folder.esm.js",
+  "types": "../dist/Folder/index.d.ts"
+}
