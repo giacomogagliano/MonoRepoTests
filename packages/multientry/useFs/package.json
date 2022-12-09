@@ -1,4 +1,5 @@
 {
   "main": "dist/zionstate-multientry-useFs.cjs.js",
-  "module": "dist/zionstate-multientry-useFs.esm.js"
+  "module": "dist/zionstate-multientry-useFs.esm.js",
+  "types": "../dist/useFs.d.ts"
 }

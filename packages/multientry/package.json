@@ -19,8 +19,8 @@
       "default": "./useFs/dist/zionstate-multientry-useFs.cjs.js"
     },
     "./Folder": {
-      "module": "./Folder/some/dist/zionstate-multientry-Folder-some.esm.js",
-      "default": "./Folder/some/dist/zionstate-multientry-Folder-some.cjs.js"
+      "module": "./Folder/dist/zionstate-multientry-Folder.esm.js",
+      "default": "./Folder/dist/zionstate-multientry-Folder.cjs.js"
     },
     "./package.json": "./package.json"
   },
@@ -36,7 +36,7 @@
     "dist",
     "entry2",
     "useFs",
-    "Folder/some"
+    "Folder"
   ],
   "preconstruct": {
     "exports": true,
@@ -44,7 +44,7 @@
       "index.ts",
       "entry2.ts",
       "useFs.ts",
-      "./Folder/some.ts"
+      "./Folder/index.ts"
     ]
   }
 }
