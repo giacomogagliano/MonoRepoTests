@@ -65,3 +65,26 @@ All packages shall be
 
 dobbiamo ggiungere delle cose
 non ho ancora finito il resto ma faccio B
+
+# Tests on pull requests:
+
+## multiple pr's and non ordered merging.
+
+I am doing several commits with pushes, and create a PR
+for each ... then I will handle then not in the right
+order
+
+I will create
+
+- [ ] 1 file `change1.ts`
+  - [ ] commit
+  - [ ] create pr
+- [ ] 1 filr `change2.ts`
+  - [ ] commit
+  - [ ] create pr
+- [ ] 1 file `change3.ts`
+  - [ ] commit
+  - [ ] create pr
+- [ ] merge request2
+- [ ] merge request1
+- [ ] merge request3
