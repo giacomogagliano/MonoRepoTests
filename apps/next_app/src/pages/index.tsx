@@ -22,6 +22,7 @@ export default function index() {
       <div>{name.version}</div>
       <div>{name.major}</div>
       <div>{name.major}</div>
+      <div>{name.major}</div>
     </>
   );
 }
