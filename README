@@ -76,15 +76,15 @@ order
 
 I will create
 
-- [ ] 1 file `change1.ts`
-  - [ ] commit
-  - [ ] create pr
-- [ ] 1 filr `change2.ts`
-  - [ ] commit
-  - [ ] create pr
-- [ ] 1 file `change3.ts`
-  - [ ] commit
-  - [ ] create pr
-- [ ] merge request2
-- [ ] merge request1
-- [ ] merge request3
+- [x] 1 file `change1.ts`
+  - [x] commit
+  - [x] create pr
+- [x] 1 filr `change2.ts`
+  - [x] commit
+  - [x] create pr
+- [x] 1 file `change3.ts`
+  - [x] commit
+  - [x] create pr
+- [x] merge request2
+- [x] merge request1
+- [x] merge request3
