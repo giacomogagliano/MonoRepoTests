@@ -88,3 +88,27 @@ I will create
 - [x] merge request2
 - [x] merge request1
 - [x] merge request3
+
+### risultato
+
+ha funzionato tutto per bene
+
+## Test2
+
+### multiple pr, second depending on first.
+
+Ora provo a simulare una situazione in cui ci sono due file:
+
+- [x] fileA.ts
+- [x] fileB.ts
+- [x] commit A
+- [x] commit B
+
+il file A viene creato per primo e il file B ha una
+dipendenza su di esso.
+
+- [x] effettuare pr per entrambi
+- [x] fare merge di `fileB`
+- [x] fare merde di `fileC`
+
+ha funzionato senza nessun problema.
