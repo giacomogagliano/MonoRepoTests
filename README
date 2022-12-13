@@ -112,3 +112,32 @@ dipendenza su di esso.
 - [x] fare merde di `fileC`
 
 ha funzionato senza nessun problema.
+
+### Risultato
+
+Ho creato un branch dove effettuare questi test. Per tenere
+aggiornati tutti (idealmente), ho scritto le variazioni in
+questo file, e pushavo questo file sul root. é andato tutto
+bene tranne che essendo questo file presente anche nel
+branch test, avendolo cambiato da come era in partenza sul
+branch test, a creato dei conflitti durante i merge, che
+sono stati facilmente risolvibili.
+
+## cambiamenti su dev locale e pr su dev remoto
+
+### svolgimento
+
+Ora creo un cambiamento nel dev locale e provo a fare una
+richiesta di merge sul `dev`.
+Il file cambiato e questo in cui scrivo (README)
+
+- [x] fare pr
+
+> non ha funzionato.
+
+Da questo errore:
+
+> There are no commits between the base 'dev' branch and the
+> comparing 'dev' branch.
+
+quindi devo rinominare il branch come dev\_
