@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { UAParser } from "ua-parser-js";
+import styled from "styled-components";
+
+const blat = styled(() => <></>)`
+  container-type: size;
+`;
 
 export default function index() {
   const [name, setName] = useState({ name: "", version: "", major: "" });
