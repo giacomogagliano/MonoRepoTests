@@ -1,0 +1,17 @@
+# Javascript
+
+In questa cartella metteremo dei codici esempio che usano le
+funzionalita di base di Javascript
+
+nella cartella ci sono dei file in cui vengono mostrati
+vari tipi di strutture di dati, nominati in base al livello
+di complessità:
+
+- **basic**
+- **mid**
+- **high**
+
+Io ho cominciato a buttare giu queste idee, pero
+eventualmente potremmo creare un sistema tipo che per ogni
+"lezione" bisogna scaricarsi un repo. Quindi ogni lezione
+potrebbe essere un package dentro questa applicazione.
