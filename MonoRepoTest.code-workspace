@@ -1,14 +1,4 @@
 {
-  "folders": [
-    {
-      "path": "."
-    },
-    {
-      "path": "apps"
-    },
-    {
-      "path": "packages"
-    }
-  ],
+  "folders": [{ "path": "." }, { "path": "apps" }, { "path": "packages" }],
   "settings": {}
 }
