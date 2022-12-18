@@ -7,7 +7,7 @@ import { StyleCheUsaLaString } from "./StyledComponent";
 import { StyledFunctionComponent } from "./StyledComponent";
 import { StyledHTMLElement } from "./StyledComponent";
 
-import { JsxElement } from "./JsxElement";
+import { ComponentFromJsx, JsxElement } from "./JsxElement";
 
 export function App() {
   return (
@@ -20,9 +20,13 @@ export function App() {
       <StyledFunctionComponent />
       <StyleCheUsaLaString />
       {/* un elemento Jsx non è una funzione, quindi non può essere chiamato come un
-        componente
-      */}
+       * componente
+       */}
       {JsxElement}
+      {/** una volta "wrappato" in una funzione, anche un elemento jsx puo essere
+       * usato come
+       */}
+      <ComponentFromJsx />
     </div>
   );
 }
