@@ -41,3 +41,12 @@ rimettere il testo di B che nel frattempo era stato messo su
 C)
 Quindi per provare ad effettuare il test correttamente ora
 faccio una prova con altri file.
+
+Ho creato 3 file
+
+- provadrop1.txt
+- provadrop2.txt
+- provadrop3.txt
+
+ho fatto il commit per ogni singolo file. ora provo a
+droppare il secondo
