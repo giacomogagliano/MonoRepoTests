@@ -73,7 +73,9 @@ pero io possa scegliere di cancellare il file
 - [x] fare commit di questo file cambiato
 - [x] fare un cambiamento al file
 - [x] committare il cambiamento
-- [ ] fare il drop del commit con la creazione del file
+- [x] fare il drop del commit con la creazione del file
+
+> ha funzionato come aspettato
 
 # Final
 
@@ -85,3 +87,6 @@ La funzione drop permette di scaricare dei commit. Nel caso
 però in cui i commit che vogliamo droppare abbiano agito su
 un file presente in uno degli altri commit, questa azione
 puo creare conflitti.
+
+> É inutilizzabile per cambiamenti effettuati sullo stesso
+> file e che siano sullo stesso ramo
