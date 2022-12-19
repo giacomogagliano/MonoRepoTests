@@ -65,6 +65,15 @@ ora prova a
 mi aspetto che mi chieda di risolvere il conflitto e che
 pero io possa scegliere di cancellare il file
 
+### evoluzione stage
+
+- [x] creare un file
+- [x] fare commit
+- [ ] fare un cambiamento ad un altro file
+- [ ] fare commit di questo file cambiato
+- [ ] fare un cambiamento al file
+- [ ] fare il drop del commit con la creazione del file
+
 # Final
 
 ha funzionato perfettamente!!!
