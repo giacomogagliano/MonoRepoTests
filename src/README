@@ -1,3 +1,5 @@
+# README
+
 provo a fare un drop
 cambiamento 2
 cambiamento 3
@@ -9,3 +11,8 @@ cambiamenti, allora sto provando effettuano prima il push
 sul remote e fare questo primo cambiamento
 
 mi sembra di aver capito che ad ogni commit mette anche il cambiamento precedente se il cambiamento è avvenuto sullo stesso file, almeno sembra. Ora committo questo e nel commit mi aspetto che sia presente anche la riga aggiunta nel commit precedente (quello dove cè scritto weird thing)
+
+### style
+
+e invece no questa volta nel commit c'era solo il paragrafo
+"mi sembra", quindi ora riprovo con questo paragrafo
