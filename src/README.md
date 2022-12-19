@@ -50,3 +50,28 @@ Ho creato 3 file
 
 ho fatto il commit per ogni singolo file. ora provo a
 droppare il secondo
+
+# stage 10
+
+ora prova a
+
+- creare un file
+- fare commit
+- fare un cambiamento al file
+- fare il drop del commit con la creazione del file
+
+## expected behaviour
+
+mi aspetto che mi chieda di risolvere il conflitto e che
+pero io possa scegliere di cancellare il file
+
+# Final
+
+ha funzionato perfettamente!!!
+
+# Conclusioni
+
+La funzione drop permette di scaricare dei commit. Nel caso
+però in cui i commit che vogliamo droppare abbiano agito su
+un file presente in uno degli altri commit, questa azione
+puo creare conflitti.
