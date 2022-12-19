@@ -71,7 +71,8 @@ pero io possa scegliere di cancellare il file
 - [x] fare commit
 - [x] fare un cambiamento ad un altro file
 - [x] fare commit di questo file cambiato
-- [ ] fare un cambiamento al file
+- [x] fare un cambiamento al file
+- [x] committare il cambiamento
 - [ ] fare il drop del commit con la creazione del file
 
 # Final
