@@ -16,3 +16,13 @@ mi sembra di aver capito che ad ogni commit mette anche il cambiamento precedent
 
 e invece no questa volta nel commit c'era solo il paragrafo
 "mi sembra", quindi ora riprovo con questo paragrafo
+
+### stage 8
+
+effettivamente nell'ultimo commit ha aggiunto solo la parte
+contenuta nel paragrafo precedente che quoto in questa parte
+che scrivo ora, per poi provare a droppare il cambiamento
+
+> e invece no questa volta nel commit c'era solo il
+> paragrafo "mi sembra", quindi ora riprovo con questo
+> paragrafo
