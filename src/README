@@ -7,3 +7,5 @@ cambiamento 4, dopo di che provo a droppare il cambiamento 3
 cera una cosa strana, ad ogni commit metteva tutti i
 cambiamenti, allora sto provando effettuano prima il push
 sul remote e fare questo primo cambiamento
+
+mi sembra di aver capito che ad ogni commit mette anche il cambiamento precedente se il cambiamento è avvenuto sullo stesso file, almeno sembra. Ora committo questo e nel commit mi aspetto che sia presente anche la riga aggiunta nel commit precedente (quello dove cè scritto weird thing)
