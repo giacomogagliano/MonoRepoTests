@@ -26,3 +26,18 @@ che scrivo ora, per poi provare a droppare il cambiamento
 > e invece no questa volta nel commit c'era solo il
 > paragrafo "mi sembra", quindi ora riprovo con questo
 > paragrafo
+
+### stage 9
+
+mi sembra di aver capito che l'inteactive rebase effettuato
+prendendo un commit che ha cambiamenti sul file A, e cercare
+di rebasarlo su un commit il quale anche lui ha un
+cambiamento sullo stesso file, non funziona molto bene.
+Io ho provato a levare il commit del paragrafo style, ma
+quando ho effettuato il resolve mi ha chiesto di scegliere
+il testo del commit successivo (A => B => C, io cercavo di
+togliere B, ma quando provavo a mettere C su A, mi faceva
+rimettere il testo di B che nel frattempo era stato messo su
+C)
+Quindi per provare ad effettuare il test correttamente ora
+faccio una prova con altri file.
