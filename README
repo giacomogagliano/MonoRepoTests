@@ -62,3 +62,82 @@ All packages shall be
     "@zionstate/pack1": "*",
     "dotenv": "^16.0.3",
     "typescript": "^4.8.4"
+
+dobbiamo ggiungere delle cose
+non ho ancora finito il resto ma faccio B
+
+# Tests on pull requests:
+
+## multiple pr's and non ordered merging.
+
+I am doing several commits with pushes, and create a PR
+for each ... then I will handle then not in the right
+order
+
+I will create
+
+- [x] 1 file `change1.ts`
+  - [x] commit
+  - [x] create pr
+- [x] 1 filr `change2.ts`
+  - [x] commit
+  - [x] create pr
+- [x] 1 file `change3.ts`
+  - [x] commit
+  - [x] create pr
+- [x] merge request2
+- [x] merge request1
+- [x] merge request3
+
+### risultato
+
+ha funzionato tutto per bene
+
+## Test2
+
+### multiple pr, second depending on first.
+
+Ora provo a simulare una situazione in cui ci sono due file:
+
+- [x] fileA.ts
+- [x] fileB.ts
+- [x] commit A
+- [x] commit B
+
+il file A viene creato per primo e il file B ha una
+dipendenza su di esso.
+
+- [x] effettuare pr per entrambi
+- [x] fare merge di `fileB`
+- [x] fare merde di `fileC`
+
+ha funzionato senza nessun problema.
+
+### Risultato
+
+Ho creato un branch dove effettuare questi test. Per tenere
+aggiornati tutti (idealmente), ho scritto le variazioni in
+questo file, e pushavo questo file sul root. é andato tutto
+bene tranne che essendo questo file presente anche nel
+branch test, avendolo cambiato da come era in partenza sul
+branch test, a creato dei conflitti durante i merge, che
+sono stati facilmente risolvibili.
+
+## cambiamenti su dev locale e pr su dev remoto
+
+### svolgimento
+
+Ora creo un cambiamento nel dev locale e provo a fare una
+richiesta di merge sul `dev`.
+Il file cambiato e questo in cui scrivo (README)
+
+- [x] fare pr
+
+> non ha funzionato.
+
+Da questo errore:
+
+> There are no commits between the base 'dev' branch and the
+> comparing 'dev' branch.
+
+quindi devo rinominare il branch come dev\_

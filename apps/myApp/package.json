@@ -12,6 +12,7 @@
     "test": "nodemon ./test/test.js"
   },
   "dependencies": {
+    "@zionstate/multientry": "^0.0.1",
     "dotenv": "^16.0.3"
   }
 }

@@ -1,4 +1,5 @@
 {
   "main": "dist/zionstate-multientry-entry2.cjs.js",
-  "module": "dist/zionstate-multientry-entry2.esm.js"
+  "module": "dist/zionstate-multientry-entry2.esm.js",
+  "types": "../dist/entry2.d.ts"
 }
