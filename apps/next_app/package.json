@@ -7,9 +7,11 @@
     "dev": "next dev"
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.26",
     "next": "^13.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "styled-component": "^2.8.0",
     "ua-parser-js": "^1.0.32"
   },
   "devDependencies": {
