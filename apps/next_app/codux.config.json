@@ -20,8 +20,5 @@
       "trigger": ["checkout", "pull", "setup"]
     }
   },
-  "styling": {
-    "solution": "scss modules"
-  },
   "svgLoader": "both"
 }
