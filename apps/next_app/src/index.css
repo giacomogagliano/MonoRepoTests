@@ -1,1 +1,31 @@
-body{}
+body {}
+.canvas{
+    width: 100vw;
+    height: 100vw;
+}
+.btn {}
+.form{}
+
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    grid-auto-flow: column;
+    flex-direction: row;
+    gap: 0px 0px;
+    width: 100%;
+    background-color: #333030;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+
+
+}
+
+.logo {
+    width: 10cqh;
+    height: 10cqh;
+    background-color: aqua;
+    border-radius: 100%;
+}
