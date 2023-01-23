@@ -1,0 +1,4 @@
+{
+  "main": "dist/test-multy-entry-style.cjs.js",
+  "module": "dist/test-multy-entry-style.esm.js"
+}
