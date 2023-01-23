@@ -4,5 +4,5 @@ import { Button } from '../../../components/button/button';
 
 export default createBoard({
     name: 'Button',
-    Board: () => <Button />
+    Board: () => <Button>click me</Button>,
 });
