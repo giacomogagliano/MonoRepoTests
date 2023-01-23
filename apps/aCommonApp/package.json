@@ -10,6 +10,7 @@
   "dependencies": {
     "@zionstate/do": "^0.0.1",
     "@zionstate/testpack": "^0.0.1",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "test-multy-entry": "1.0.0"
   }
 }
