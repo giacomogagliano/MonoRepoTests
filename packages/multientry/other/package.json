@@ -1,0 +1,4 @@
+{
+  "main": "dist/zionstate-multientry-other.cjs.js",
+  "module": "dist/zionstate-multientry-other.esm.js"
+}

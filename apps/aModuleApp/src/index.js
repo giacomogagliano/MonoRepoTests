@@ -1,5 +1,10 @@
-import { awesomet } from "@zionstate/testpack";
-import { packDo } from "@zionstate/do";
-import { entryPoint1 } from "@zionstate/multientry";
-import { entry2 } from "@zionstate/multientry/entry2";
-console.log(entry2);
+// import { awesomet } from "@zionstate/testpack";
+// import { packDo } from "@zionstate/do";
+// import { entryPoint1 } from "@zionstate/multientry";
+// import { entry2 } from "@zionstate/multientry/entry2";
+// import { HTML } from "testmultyentry";
+// import { style } from "testmultyentry/HTML/style";
+import { style } from "testmultyentry/style";
+import { oo } from "@zionstate/multientry/other";
+console.log(style);
+console.log(oo);
