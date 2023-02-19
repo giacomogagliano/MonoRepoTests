@@ -22,6 +22,10 @@
       "module": "./Folder/dist/zionstate-multientry-Folder.esm.js",
       "default": "./Folder/dist/zionstate-multientry-Folder.cjs.js"
     },
+    "./other": {
+      "module": "./other/dist/zionstate-multientry-other.esm.js",
+      "default": "./other/dist/zionstate-multientry-other.cjs.js"
+    },
     "./package.json": "./package.json"
   },
   "author": "Gagliano Giacomo",
@@ -36,7 +40,8 @@
     "dist",
     "entry2",
     "useFs",
-    "Folder"
+    "Folder",
+    "other"
   ],
   "preconstruct": {
     "exports": true,
@@ -44,7 +49,8 @@
       "index.ts",
       "entry2.ts",
       "useFs.ts",
-      "./Folder/index.ts"
+      "./Folder/index.ts",
+      "other.ts"
     ]
   }
 }

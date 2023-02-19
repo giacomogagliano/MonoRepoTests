@@ -1,0 +1,44 @@
+{
+  "name": "testmultyentry",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.ts",
+  "main": "dist/testmultyentry.cjs.js",
+  "module": "dist/testmultyentry.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn preconstruct build && run-p build:*",
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist",
+    "typecheck": "tsc --noEmit",
+    "test2": "sh src/input.sh"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/testmultyentry.cjs.js",
+      "module": "./dist/testmultyentry.esm.js"
+    },
+    "./style": {
+      "default": "./style/dist/testmultyentry-style.cjs.js",
+      "module": "./style/dist/testmultyentry-style.esm.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "style"
+  ],
+  "preconstruct": {
+    "exports": true,
+    "entrypoints": [
+      "index.ts",
+      "style.ts"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@preconstruct/cli": "^2.2.2"
+  }
+}
