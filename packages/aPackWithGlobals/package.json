@@ -4,6 +4,7 @@
   "description": "",
   "source": "index.ts",
   "main": "dist/apackwithglobals.cjs.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "clean": "rm -rf dist",
     "build": "yarn preconstruct build && run-p build:*",
