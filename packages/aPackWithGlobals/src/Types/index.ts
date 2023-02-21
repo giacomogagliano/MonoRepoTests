@@ -1,2 +1,2 @@
 export * from "./SomeType";
-export * from "./globalDeclarations";
+export * from "./global";
