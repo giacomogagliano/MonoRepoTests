@@ -2,9 +2,21 @@
   "name": "noizipfs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "index.ts",
+  "main": "dist/noizipfs.cjs.js",
+  "module": "dist/noizipfs.esm.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "build:p": "preconstruct build",
+    "build:r": "rollup -c ./rollup.config.js",
+    "build": "yarn build:p && yarn build:r ",
+    "typecheck": "tsc --noEmit"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/noizipfs.cjs.js",
+      "import": "./dist/noizipfs.mjs"
+    }
   },
   "keywords": [],
   "author": "",
