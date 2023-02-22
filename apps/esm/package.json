@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ipfsesm": "1.0.0",
     "noizipfs": "1.0.0"
   }
 }
