@@ -38,6 +38,7 @@
     "@manypkg/cli": "^0.19.2",
     "@preconstruct/cli": "^2.2.2",
     "@types/node": "^18.8.1",
+    "ipfs-http-client": "^60.0.0",
     "typescript": "^4.8.4"
   }
 }
