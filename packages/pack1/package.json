@@ -42,7 +42,7 @@
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.3",
     "@babel/preset-typescript": "^7.21.0",
-    "@octokit/rest": "^19.0.4",
+    "@octokit/rest": "^19.0.7",
     "@types/lodash": "^4.14.186",
     "@types/node": "^18.11.13",
     "dotenv": "^16.0.3",
