@@ -16,6 +16,7 @@
     "@zionstate/testpack": "^0.0.1",
     "afluidpack": "1.0.0",
     "apackwithglobals": "1.0.0",
+    "apackwithrehype": "1.0.0",
     "testmultyentry": "1.0.0"
   }
 }

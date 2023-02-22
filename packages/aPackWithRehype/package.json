@@ -8,13 +8,28 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "yarn preconstruct build && run-p build:*",
+    "build:pkg": "yarn preconstruct build",
+    "build:rollup": "rollup -c ./rollup.config.js",
+    "build": "yarn build:pkg && yarn build:rollup ",
     "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "exports": {
+    ".": {
+      "import": "./dist/apackwithrehype.esm.mjs",
+      "require": "./dist/apackwithrehype.cjs.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "preconstruct": {
+    "exports": true,
+    "entrypoints": [
+      "index.ts"
+    ]
+  },
   "peerDependencies": {
     "gray-matter": "^4.0.3",
     "rehype-highlight": "^6.0.0",
