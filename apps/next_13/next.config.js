@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   webpack: (config) => {
     config.resolve.fallback = {
       "styled-components": false,
@@ -10,6 +10,7 @@ module.exports = {
   experimental: {
     reactRoot: true,
     appDir: true,
+    esmExternals: "loose",
   },
   reactStrictMode: true,
   compiler: {
