@@ -15,7 +15,7 @@
   },
   "exports": {
     ".": {
-      "require": "./dist/ipfsesm.cjs.js",
+      "require": "./dist/ipfsesm.cjs",
       "import": "./dist/ipfsesm.mjs"
     }
   },
