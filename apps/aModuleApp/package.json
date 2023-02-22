@@ -15,6 +15,7 @@
     "@zionstate/pack1": "0.0.1",
     "@zionstate/testpack": "^0.0.1",
     "apackwithglobals": "1.0.0",
+    "apackwithrehype": "1.0.0",
     "testmultyentry": "1.0.0"
   }
 }

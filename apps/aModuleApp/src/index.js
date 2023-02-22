@@ -4,7 +4,9 @@
 // import { entry2 } from "@zionstate/multientry/entry2";
 // import { HTML } from "testmultyentry";
 // import { style } from "testmultyentry/HTML/style";
-import { style } from "testmultyentry/style";
-import { oo } from "@zionstate/multientry/other";
-console.log(style);
-console.log(oo);
+// import { style } from "testmultyentry/style";
+// import { oo } from "@zionstate/multientry/other";
+import { mdParser_v1 } from "apackwithrehype";
+console.log(mdParser_v1);
+// console.log(oo);
+// console.log(mdParser_v1);
