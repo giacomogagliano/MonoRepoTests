@@ -1,0 +1,28 @@
+{
+  "name": "ipfsesm",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "source": "index.ts",
+  "main": "dist/ipfsesm.cjs.js",
+  "module": "dist/ipfsesm.esm.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:p": "preconstruct build",
+    "build:r": "rollup -c ./rollup.config.js",
+    "build": "yarn build:p && yarn build:r ",
+    "typecheck": "tsc --noEmit"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/ipfsesm.cjs",
+      "import": "./dist/ipfsesm.mjs"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ipfs-http-client": "^60.0.0"
+  }
+}
