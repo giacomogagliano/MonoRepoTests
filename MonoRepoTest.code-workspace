@@ -1,4 +1,8 @@
 {
-  "folders": [{ "path": "." }, { "path": "apps" }, { "path": "packages" }],
+  "folders": [
+    { "path": "." },
+    { "path": "packages" },
+    { "path": "packages/javascript" }
+  ],
   "settings": {}
 }

@@ -8,10 +8,9 @@
   "private": false,
   "type": "commonjs",
   "dependencies": {
-    "@zionstate/do": "^0.0.2",
+    "@zionstate/do": "^0.0.1",
     "@zionstate/testpack": "^0.0.1",
-    "afluidpack": "1.0.0",
     "dotenv": "^16.0.3",
-    "testmultyentry": "1.0.0"
+    "test-multy-entry": "1.0.0"
   }
 }
