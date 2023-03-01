@@ -1,0 +1,50 @@
+{
+  "name": "test-multy-entry",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.ts",
+  "main": "dist/test-multy-entry.cjs.js",
+  "module": "dist/test-multy-entry.esm.js",
+  "exports": {
+    ".": {
+      "default": "./dist/test-multy-entry.cjs.js",
+      "module": "./dist/test-multy-entry.esm.js"
+    },
+    "./HTML/style": {
+      "default": "./HTML/style/dist/test-multy-entry-HTML-style.cjs.js",
+      "module": "./HTML/style/dist/test-multy-entry-HTML-style.esm.js"
+    },
+    "./style": {
+      "default":"./style/dist/test-multy-entry-style.cjs.js",
+      "module": "./style/dist/test-multy-entry-style.esm.js"
+    },
+    "./packages.json": "./packages.json"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn preconstruct build && run-p build:*",
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist",
+    "typecheck": "tsc --noEmit",
+    "test2": "sh input.sh"
+  },
+  "files": [
+    "dist",
+    "HTML/style",
+    "style"
+  ],
+  "preconstruct": {
+    "exports": true,
+    "entrypoints": [
+      "index.ts",
+      "./HTML/style/index.ts",
+      "style.ts"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@preconstruct/cli": "^2.2.2"
+  }
+}
